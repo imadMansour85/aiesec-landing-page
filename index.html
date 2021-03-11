@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+<link rel="stylesheet" href="style.css">	
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</head>
+<body>
+   <div id="root"></div>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light" id="bg">
+			<div class="container">
+				<a  href="#" class="card_image_pc"><img src="https://blog.aiesec.org/wp-content/uploads/2017/05/Aiesec-white-blue.png" style="width:180px;height:23px;"></a>
+				<a href="#" class="card_image_phone"><img src="https://cdn-expa.aiesec.org/assets/images/favicon-white.png" style="height:38px;"></a>
+				<button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Clients</a>
+					  </li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Contact</a>
+					</li>
+				  </ul>
+				</div>
+			</div>
+			
+		  </nav>
+		  <div class="motivationquote carousel-indicators">
+						<div class="container">
+						   <div class="row">
+								<h1 class="mot">Develop yourself with AIESEC</h1>
+								<span class="titleSm">
+									<h2 class="motSmall">Voluntary projects & professional internships</h2>
+								</span>
+							</div>
+							<div class="buttonshead">
+								<button type="button" class="btn btn-primary buttomPos">Youth</button>
+								<button type="button" class="btn btn-default btnG">For company</button>
+							</div>
+
+						
+							
+							<div class="row buttonshead2">
+								<div class="col-sm-6" >
+									<button type="button" class="btn btn-primary buttomPos">Youth</button>
+								</div>
+								<div class="col-sm-6" >
+									<button type="button" class="btn btn-default btnG">For company</button>
+								</div>
+							</div>
+							</div>
+		  </div>
+
+				<div id="mySidenav" class="sidenav">
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+				  </div>
+				  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img class="d-block w-100" style="height:640px; background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)) !important;" src="https://s3-eu-west-1.amazonaws.com/cdn.expa.aiesec.org/assets/images/aiesec_org/mobile_main.jpg" alt="First slide">
+					  </div>
+					  <div class="carousel-item item2">
+						<img class="d-block w-100" style="height:640px" src="https://www.giki.edu.pk/images/uploads/1481716207_TAZ_0559.jpg">
+					  </div>
+					  <div class="carousel-item item3">
+						<img class="d-block w-100" style="height:640px;" src="https://i1.wp.com/www.malaysiaworldnews.com/wp-content/uploads/2019/11/IMG_8526-scaled.jpg">
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" style="z-index: 260;" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" style="z-index: 260;" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
+				  <div class="black"></div>
+				  <!-- cards TOP -->
+				  <div class="asset"></div>
+				  <div class="container rightshow" >
+					  <div class="row">
+						<div class="main">
+							<h1 class="font_title" style="text-align: center; margin-top: 20px;margin-bottom:16px;">Develop your leadership with aiesec</h1>
+							<div class="under-title"></div>
+							<div class="under-carousel">
+								<div class="col-md-12">
+									<p class="headingTitle" ><span class="span_color">AIESEC</span>  is a global platform for young people to develop their <span class="span_color">leadership</span>  potential through international internships and volunteer opportunities.
+										Founded in 1948, AIESEC is a non-governmental, 
+										and not-for-profit organization entirely run by 
+										youth for youth</p>
+								</div>
+
+							</div>
+							<ul class="cards">
+							  <li class="cards_item">
+								<div class="card  nt_center">
+									<div class="lineVolunteer"></div>
+								  <div class="card_image"><img src="https://cdn-expa.aiesec.org/icons-v3/gv-logo.png" style="width:170px;"></div>
+								  <div class="card_content">
+									<h2 class="card_title" style="text-align: center;">BECOME A VOLUNTEER</h2>
+									<p class="card_text">Find the right job through high quality listings and search for roles based on title, technology stack, salary, location, and more.</p>
+									<button class="btnD btn1 ">Read More</button>
+								  </div>
+								</div>
+							  </li>
+							  <li class="cards_item">
+								<div class="card">
+								  <div class="lineTalent"></div>
+								  <div class="card_image"><img src="https://cdn-expa.aiesec.org/icons-v3/gta-logo.png" style="width:170px;"></div>
+								  <div class="card_content">
+									<h2 class="card_title" style="text-align: center;"> BECOME AN INTERN</h2>
+									<p class="card_text">Develop your leadership
+										while boosting your career
+										prospects with an international
+										internship in your field</p>
+									<button class="btnD btn2">Read More</button>
+								  </div>
+								</div>
+							  </li>
+							  <li class="cards_item">
+								<div class="card  nt_center">
+								<div class="lineTeacher"></div>
+								  <div class="card_image"><img src="https://cdn-expa.aiesec.org/icons-v3/gte-logo.png" style="width:170px;"></div>
+								  <div class="card_content">
+									<h2 class="card_title" style="text-align: center;">BECOME A TEACHER</h2>
+									<p class="card_text">Develop your leadership
+										while boosting your career
+										prospects with an opportunity
+										to work as a teacher abroad</p>
+									<button class="btnD btn3">Read More</button>
+								  </div>
+								</div>
+							  </li>
+							</ul>
+						  </div>
+					  </div> 
+				  </div>
+				  <div class="container containerStatistics">
+					  <div class="row">
+						  <div class="col-md-4 staistics" >
+							<div class="img"><img src="https://aiesec.org//assets/images/World.svg"></div>
+							<div class="number"><b>114</b></div>
+							<div class="comment">Countries & Territories</div>
+						 </div>
+						  <div class="col-md-4 staistics"  >
+							<div class="img"><img src="https://aiesec.org//assets/images/Experiences.svg"></div>
+							<div class="number"><b>7,000+</b></div>
+							<div class="comment"> Partner Organizations</div>
+						</div>
+						  <div class="col-md-4 staistics"  >
+							<div class="img"><img src="https://aiesec.org//assets/images/Partners.svg"></div>
+							<div class="number"><b>30,000+</b></div>
+							<div class="comment">Experiences Every Year</div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="opdiv">
+					<div class="container">
+						<div class="row">
+							<div class="main">
+								<h1 style=" text-align: center; margin: auto;margin-top:20px;margin-bottom:16px;">How It Works</h1>
+								<div class="under-title"></div>
+							<ul class="cards">
+
+								  <li class="cards_item1">
+									<div class="card1">
+									  <div class="card_image1" style="margin-bottom:0"><img src="https://image.flaticon.com/icons/svg/855/855404.svg"></div>
+									  <div class="card_content1">
+										<h2 class="card_title">SEARCH</h2>
+										<p class="card_text1">Find the opportunity that matches you that matches you</p>
+									  </div>
+									</div>
+								  </li>
+								  <li class="cards_item1">
+									<div class="card1">
+									  <div class="card_image1"><img src="https://image.flaticon.com/icons/svg/853/853017.svg"></div>
+									  <div class="card_content1">
+										<h2 class="card_title">APPLY</h2>
+										<p class="card_text1">Fill out the signup form, fill out your profile and apply for opportunities</p>
+									  </div>
+									</div>
+								  </li>
+								  <li class="cards_item1">
+									<div class="card1">
+									  <div class="card_image1"><img src="https://image.flaticon.com/icons/svg/1412/1412338.svg"></div>
+									  <div class="card_content1">
+										<h2 class="card_title">SELECTION</h2>
+										<p class="card_text1">You will be contacted by the opportunity manager to clarify all details</p>
+									  </div>
+									</div>
+								  </li>
+								  <li class="cards_item1">
+									<div class="card1">
+									  <div class="card_image1"><img src="https://image.flaticon.com/icons/svg/2188/2188689.svg"></div>
+									  <div class="card_content1">
+										<h2 class="card_title">APPROVE</h2>
+										<p class="card_text1">If you pass the selection, the next step is to pay and become approved!</p>
+									  </div>
+									</div>
+								  </li>
+								  <li class="cards_item1">
+									<div class="card1">
+									  <div class="card_image1" style="margin-bottom: 0px;"><img src="https://image.flaticon.com/icons/svg/1434/1434127.svg"></div>
+									  <div class="card_content1">
+										<h2 class="card_title">GO GO!</h2>
+										<p class="card_text1">AIESEC Supports you before, during and after the exchange</p>
+									  </div>
+									</div>
+								  </li>
+							   </ul>
+						</div>
+						</div>
+					</div>
+				</div>	
+				<div >		
+				  <div class="reviews" id="box">
+					  <div class="reviewCard">
+						  <div class="container">
+							  <div class="row">
+								<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+									  <div class="carousel-item active" value=1>
+												<div class="container">
+													<div class="row">
+														<div class="col-md-4">
+															<div >
+																<img class="image" src="https://cdn-expa.aiesec.org/assets/images/aiesec_org/landing/hager-bensassi.jpg" alt="">
+															</div>
+														</div>
+														<div class="col-md-8">
+														  <div class="reviewText">
+															  <h2>Hager Bensassi</h2>
+															  <p class="rvT"> &#8221; I had a chance to do a lot of research, to read a lot of papers, and to give recommendations to know what can be implemented and will help the startup strategically.</p>
+														  </div>
+														</div>
+														</div>
+													   </div>
+											  </div>
+									  <div class="carousel-item" value=2>
+												<div class="container">
+													<div class="row">
+													   
+														<div class="col-md-4">
+															<div >
+																<img class="image" src="https://cdn-expa.aiesec.org/assets/images/aiesec_org/landing/laura-maria.jpg" alt="">
+															</div>
+														</div>
+														<div class="col-md-8">
+														  <div class="reviewText">
+															  <h2>Laura Maria Ferreira dos Santos</h2>
+															  <p class="rvT"> &#8221; One highlight is discovering that I can teach other people, something that I always thought that I couldn't do! More than that, I learned to be responsible and independent in a totally different country.</p>
+														  </div>
+														</div>
+														</div>
+													   </div>
+											  </div>
+									          <div class="carousel-item" value=3>
+												<div class="container">
+													<div class="row">
+														<div class="col-md-4">
+															<div >
+																<img class="image" src="https://cdn-expa.aiesec.org/assets/images/aiesec_org/landing/brenda.jpg" alt="">
+															</div>
+														</div>
+														<div class="col-md-8">
+														  <div class="reviewText">
+															  <h2>Brenda Jáuregui</h2>
+															  <p class="rvT"> &#8221; I returned to my country with my soul completely grateful and full for having had the opportunity to share such unforgettable moments. A part of my heart stays at the school I volunteered in forever.</p>
+														  </div>
+														</div>
+														</div>
+													   </div>
+											  </div>
+									</div>
+
+								
+								  </div>
+								  </div>
+								  
+								 </div>
+								 <div class="arrow">
+									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+										<span class="fal fa-long-arrow-left" aria-hidden="true">
+										</span>
+										<span class="sr-only">Previous</span>
+									  </a>
+									  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+										<span class="fal fa-long-arrow-right" aria-hidden="true">
+										</span>
+									  </a>
+									</div>
+						</div>
+						
+				  </div>
+				</div>
+				  <div class="carouselPartners">
+					<div class="container">
+					<h2>Our  Partners</h2>
+					 <section class="customer-logos slider">
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/jS2q1BqC4samZkwksNS9byS2"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1525426874.jpg"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1497390359.jpeg"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1570517070.jpeg"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1489406725.png"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/6AyhdujcKWpqasHAbfB4s9gj"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1524611372.png"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/uUVY26k6a65SJ2b41Kb1STbA"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1567581991.jpg"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/Seap2BPiKnbsrJfMELDusawd"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1497265965.png"></div>
+						<div class="slide"><img src="https://s3.eu-west-1.amazonaws.com/gis-production-eu/profile_photos/original/1497390367.jpeg"></div>
+					</section>
+				  </div>
+				</div>
+				  <footer class="footer-area footer--light">
+					<div class="footer-big">
+					  <div class="container">
+						  <div class="row">
+							<div class="col-md-12 footer_phone">
+								<div class="footer_title">About US
+									<i class="fas fa-plus" onclick="drop(1)"></i>
+									 <ul class="dropdownfooter" id="drop1">
+										 <li>About US</li>
+										 <li>Help</li>
+										 <li>Blog</li>
+										 <li>Press</li>
+									 </ul>
+								</div>
+								<div class="footer_title">Youth
+									<i class="fas fa-plus" onclick="drop(2)"></i>
+									<ul class="dropdownfooter" id="drop2">
+										<li>Global </li>
+										<li>Volunteer</li>
+										<li>Blog</li>
+										<li>Press</li>
+									</ul>
+								</div>
+								<div class="footer_title">Organisation <i class="fas fa-plus" onclick="drop()"></i></div>
+								<div class="footer_title">Membership <i class="fas fa-plus"></i></div>
+							</div>
+						  </div>
+					  </div>
+					  <!-- start .container -->
+					  <div class="container footerpc">
+						<div class="row">
+								<div class="col-md-3 col-sm-12">
+									<div class="footer-widget">
+									  <div class="widget-about">
+										<img src="http://placehold.it/250x80" alt="" class="img-fluid">
+										<p>
+											AIESEC is a global platform for young people to develop th
+											</p>
+										<ul class="contact-details">
+										  <li>
+											<span class="icon-earphones"></span> Call Us:
+											<a href="tel:344-755-111">0790122263</a>
+										  </li>
+										  <li>
+											<span class="icon-envelope-open"></span>
+											<a href="mailto:support@aazztech.com">i.mansour@esi-sba.dz</a>
+										  </li>
+										</ul>
+									  </div>
+									</div>
+									<!-- Ends: .footer-widget -->
+								  </div>
+								  <!-- end /.col-md-4 -->
+								  <div class="col-md-2 col-sm-3">
+									<div class="footer-widget">
+									  <div class="footer-menu footer-menu--1">
+										<h4 class="footer-widget-title">About</h4>
+										<ul>
+										  <li>
+											<a href="#">About Us</a>
+										  </li>
+										  <li>
+											<a href="#">Help</a>
+										  </li>
+										  <li>
+											<a href="#">Blog</a>
+										  </li>
+										  <li>
+											<a href="#">Press</a>
+										  </li>
+										  <li>
+											<a href="#">Annual Report</a>
+										  </li>
+										</ul>
+									  </div>
+									  <!-- end /.footer-menu -->
+									</div>
+									<!-- Ends: .footer-widget -->
+								  </div>
+								  <!-- end /.col-md-3 -->
+						  
+								  <div class="col-md-2 col-sm-3">
+									<div class="footer-widget">
+									  <div class="footer-menu">
+										<h4 class="footer-widget-title">Youth</h4>
+										<ul>
+										  <li>
+											<a href="#">Global Volunteer</a>
+										  </li>
+										  <li>
+											<a href="#">Global Talent</a>
+										  </li>
+										  <li>
+											<a href="#">Global Teacher</a>
+										  </li>
+										  <li>
+											<a href="#">Youth 4 Global Goals</a>
+										  </li>
+										  <li>
+											<a href="#">YouthSpeak</a>
+										  </li>
+										</ul>
+									  </div>
+									  <!-- end /.footer-menu -->
+									</div>
+									<!-- Ends: .footer-widget -->
+								  </div>
+								  <!-- end /.col-lg-3 -->
+						  
+								  <div class="col-md-3 col-sm-3">
+									<div class="footer-widget">
+									  <div class="footer-menu no-padding">
+										<h4 class="footer-widget-title">Organizations</h4>
+										<ul>
+										  <li>
+											<a href="#">Partner with</a>
+										  </li>
+										  <li>
+											<a href="#">Pricing</a>
+										  </li>
+										  <li>
+											<a href="#">Global Volunteer</a>
+										  </li>
+										  <li>
+											<a href="#">Global Talent</a>
+										  </li>
+										  <li>
+											<a href="#">Global Teacher</a>
+										  </li>
+										  <li>
+											<a href="#">Global Partners</a>
+										  </li>
+										  <li>
+											<a href="#">Sellers Faq</a>
+										  </li>
+										</ul>
+									  </div>
+									  <!-- end /.footer-menu -->
+									</div>
+									<!-- Ends: .footer-widget -->
+								  </div>
+								  <!-- Ends: .col-lg-3 -->
+								  <div class="col-md-2 col-sm-3">
+									<div class="footer-widget">
+									  <div class="footer-menu no-padding">
+										<h4 class="footer-widget-title">Membership</h4>
+										<ul>
+										  <li>
+											<a href="#">Join Us</a>
+										  </li>
+										  <li>
+											<a href="#">Find your country</a>
+										  </li>
+										  <li>
+											<a href="#">Alumni</a>
+										  </li>
+										 
+										</ul>
+									  </div>
+									  <!-- end /.footer-menu -->
+									</div>
+									<!-- Ends: .footer-widget -->
+								  </div>
+								</div>
+								<!-- end /.row -->
+							  </div>
+							  <!-- end /.container -->
+							</div>
+							<!-- end /.footer-big -->
+							</div>
+					<div class="mini-footer">
+					  <div class="container">
+						<div class="row">
+						  <div class="col-md-12">
+							<div class="copyright-text">
+							  <p>© 2020
+								<a href="#">AIESEC</a>. All rights reserved. Created by
+								<a href="#">Imad Eddine Mansour</a>
+							  </p>
+							</div>
+							<div class="go_top">
+							  <span class="icon-arrow-up"></span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </footer>	
+			  
+<script>
+	var indice = -1;
+function openNav() {
+	indice = indice * -1
+	console.log(indice)
+	if(indice==1){
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+	else if (indice==-1){
+		document.getElementById("mySidenav").style.width = "0";
+	}
+
+}
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  var myNav = document.getElementById("bg");
+
+  if (currentScrollPos > 200) {
+    myNav.classList.add("navColor");
+    myNav.classList.remove("bg-light");
+	 }
+	else if(currentScrollPos < 200){
+		myNav.classList.add("bg-light");
+        myNav.classList.remove("navColor");
+
+	
+ } }
+ $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
+var value = document.getElementsByClassName("carousel-item active")[1].getAttribute("value");
+var color =   document.getElementById("box")
+
+function colorChanger(){
+
+	var value = document.getElementsByClassName("carousel-item active")[1].getAttribute("value");
+	if(value==1){
+	
+	color.classList.remove("reviews");
+	color.classList.add("reviewsColor");
+
+}
+else if(value==2){
+
+	color.classList.remove("reviews");
+	color.classList.add("reviewsColor2");
+ 
+}
+if(value==3){
+
+	color.classList.remove("reviews");
+	color.classList.add("reviewsColor3");
+
+}
+
+ 
+
+}
+colorChanger();
+setInterval(function(){
+	colorChanger();
+
+ }, 1000);
+
+function drop(num){
+var dropcase =	document.getElementById("drop"+num).style.display;
+	if(dropcase=="none"){
+        document.getElementById("drop"+num).style.display = "inline";
+}
+    else{
+	    document.getElementById("drop"+num).style.display = "none";
+}}
+</script>
+</body>
+
+</html> 
